@@ -1,0 +1,26 @@
+.btn {
+    color: #ffffff;
+    font-weight: 700;
+    border:none;
+    outline: none;
+    padding: .725rem 1rem;
+    background-color:#0FC94B ;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-page {
+   color: #ffffff;
+    font-weight: 700;
+    border:none;
+    outline: none;
+    padding: .725rem .5rem;
+    background-color:#222 ;
+    border-radius: 4px;
+    cursor: pointer;  
+}
+
+.btn-page:disabled{
+    background-color: rgb(244, 241, 241);
+    color: #222;
+}
