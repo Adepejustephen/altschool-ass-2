@@ -12,7 +12,7 @@ export const fetchReducer = (state, action) => {
     case "loading":
       return { ...initialState, loading: true };
     case "fetched":
-      return { ...initialState, data: action.payload, laoding: false };
+      return { ...initialState, data: action.payload, loading: false };
     case "error":
       return { ...initialState, error: action.payload, loading: false };
     default:
@@ -69,8 +69,6 @@ export const fetchReducer = (state, action) => {
 
      fetchData();
 
-     // Use the cleanup function for avoiding a possibly...
-     // ...state update after the component was unmounted
      return () => {
        cancelRequest.current = true;
      };
